@@ -734,18 +734,27 @@
 					</div>
 				</div>
 			</div><!--bottom-footer end-->
-                        <div class="modal hide fade" id="denemeModal">
-                        <div class="modal-header">
-                        <a class="close" data-dismiss="modal">×</a>
-                        <h3>Önemli Duyuru</h3>
-                        </div>
-                        <div class="modal-body">
-                        <p><img src="images/evlilik.jpg" alt=""></p>
-                        </div>
-                        <div class="modal-footer">
-                        <a href="#" class="btn btn-primary">Kapat</a>
-                        </div>
-                        </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 			<div class="bottom-strip">
 				<div class="container">
 					<p>© 2020 <a href="https://uzungol.net" rel="dofollow">Uzungöl</a> Elif İnan Otel. Tüm Hakları Saklıdır.</p>
@@ -770,11 +779,6 @@
 		<div class="max-cont"></div>
 
 	</div><!--layout end-->
-<script type="text/javascript">
-    $(window).on('load',function(){
-        $('#denemeModal').modal('show');
-    });
-</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4663443-34"></script>
 <script>
@@ -783,6 +787,11 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-4663443-34');
+</script>
+<script>
+$(document).ready(function() {
+ $("#exampleModal").modal('show');
+ })
 </script>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.js"></script>
