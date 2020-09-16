@@ -736,24 +736,24 @@
 			</div><!--bottom-footer end-->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Önemli Duyuru</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Evli olmayan çiftlerin rezervasyonlarının kabul edilmediğini lütfen unutmayınız.</p>
+                <p>Tüm çiftlerin check-in sırasında geçerli bir evlilik cüzdanı ibraz etmeleri gerekmektedir.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 			<div class="bottom-strip">
 				<div class="container">
@@ -787,11 +787,6 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-4663443-34');
-</script>
-<script>
-$(document).ready(function() {
- $("#exampleModal").modal('show');
- })
 </script>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.js"></script>
