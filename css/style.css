@@ -16,7 +16,7 @@
 9.  POST DETAILS PAGE
 12. FONT AWESOME FONTS
 12. LINE AWESOME FONTS
-
+13. RESERVATION
 
 ================================================================= */
 
@@ -10296,3 +10296,45 @@ header.novib .lang-chose {
 .my-float{
 	margin-top:16px;
 }
+
+/* ========================== RESERVATION =========================== */
+
+
+#be-booking-form {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#tl-booking-cart {
+  z-index: 1 !important;
+}
+
+
+#block-search,
+#block-search * {
+  box-sizing: border-box;
+}
+
+#block-search.block-search--main {
+  max-width: 1170px;
+  margin: 0 auto;
+  background: rgba(14, 18, 34, 0.55);
+  border: 1px solid #151A2F;
+  border-radius: 5px;
+}
+
+.be-container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #block-search.block-search--main {
+    background: #151A2F;
+    border: none;
+    border-radius: 0;
+  }
+}
+
